@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mate Playground</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="dot_positions.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <a href="#" class="randomize-button" onclick="generate_new_main_dot()">
+    GENERATE
+  </a>
+  <div class="main-dot-center" onclick="my_onclick('main-button')">
+    <div id="main-dot-up-rect" class="rect-big up red"></div>
+    <div id="main-dot-left-rect" class="rect-big left green"></div>
+    <div id="main-dot-right-rect" class="rect-big right blue"></div>
+  </div>
+
+  <div id="colorpicker-container">
+    <div class="colorpicker-dot" onclick="change_main_dot_color('up', 'gold')">
+      <div class="rect-small up gold"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('up', 'red')">
+      <div class="rect-small up red"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('up', 'turquise')">
+      <div class="rect-small up turquise"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('left', 'gray')">
+      <div class="rect-small left gray"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('left', 'purple')">
+      <div class="rect-small left purple"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('left', 'black')">
+      <div class="rect-small left black"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('right', 'yellow')">
+      <div class="rect-small right yellow"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('right', 'blue')">
+      <div class="rect-small right blue"></div>
+    </div>
+    <div class="colorpicker-dot" onclick="change_main_dot_color('right', 'green')">
+      <div class="rect-small right green"></div>
+    </div>
+  </div>
+
+  <div class="main-row">
+    <div class="column">
+      <div>
+        <img src="images/happy_robot.png" alt="Happy Robot" width="100px" height="100px" class="img-center">
+        <div id="score-left" class="score-container">
+          <p>Current score: </p>
+        </div>
+        <div class="container">
+          <div class="dot dot1">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot2">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot3">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot4">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot5">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot6">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot7">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot8">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot9">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot10">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot11">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot12">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot13">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot14">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot15">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot16">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot17">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot18">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+          <div class="dot dot19">
+            <div class="rect up transparent"></div>
+            <div class="rect left transparent"></div>
+            <div class="rect right transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div>
+        <img src="images/happy_player.png" alt="Happy Player" width="100px" height="100px" class="img-center">
+        <div id="score-right" class="score-container">
+          <p>Current score: </p>
+        </div>
+        <div class="container">
+          <div id="player-dot-1" class="dot dot1" onclick="set_field('1')">
+            <div id="dot1 up" class="rect up transparent"></div>
+            <div id="dot1 left" class="rect left transparent"></div>
+            <div id="dot1 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-2" class="dot dot2" onclick="set_field('2')">
+            <div id="dot2 up" class="rect up transparent"></div>
+            <div id="dot2 left" class="rect left transparent"></div>
+            <div id="dot2 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-3" class="dot dot3" onclick="set_field('3')">
+            <div id="dot3 up" class="rect up transparent"></div>
+            <div id="dot3 left" class="rect left transparent"></div>
+            <div id="dot3 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-4" class="dot dot4" onclick="set_field('4')">
+            <div id="dot4 up" class="rect up transparent"></div>
+            <div id="dot4 left" class="rect left transparent"></div>
+            <div id="dot4 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-5" class="dot dot5" onclick="set_field('5')">
+            <div id="dot5 up" class="rect up transparent"></div>
+            <div id="dot5 left" class="rect left transparent"></div>
+            <div id="dot5 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-6" class="dot dot6" onclick="set_field('6')">
+            <div id="dot6 up" class="rect up transparent"></div>
+            <div id="dot6 left" class="rect left transparent"></div>
+            <div id="dot6 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-7" class="dot dot7" onclick="set_field('7')">
+            <div id="dot7 up" class="rect up transparent"></div>
+            <div id="dot7 left" class="rect left transparent"></div>
+            <div id="dot7 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-8" class="dot dot8" onclick="set_field('8')">
+            <div id="dot8 up" class="rect up transparent"></div>
+            <div id="dot8 left" class="rect left transparent"></div>
+            <div id="dot8 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-9" class="dot dot9" onclick="set_field('9')">
+            <div id="dot9 up" class="rect up transparent"></div>
+            <div id="dot9 left" class="rect left transparent"></div>
+            <div id="dot9 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-10" class="dot dot10" onclick="set_field('10')">
+            <div id="dot10 up" class="rect up transparent"></div>
+            <div id="dot10 left" class="rect left transparent"></div>
+            <div id="dot10 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-11" class="dot dot11" onclick="set_field('11')">
+            <div id="dot11 up" class="rect up transparent"></div>
+            <div id="dot11 left" class="rect left transparent"></div>
+            <div id="dot11 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-12" class="dot dot12" onclick="set_field('12')">
+            <div id="dot12 up" class="rect up transparent"></div>
+            <div id="dot12 left" class="rect left transparent"></div>
+            <div id="dot12 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-13" class="dot dot13" onclick="set_field('13')">
+            <div id="dot13 up" class="rect up transparent"></div>
+            <div id="dot13 left" class="rect left transparent"></div>
+            <div id="dot13 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-14" class="dot dot14" onclick="set_field('14')">
+            <div id="dot14 up" class="rect up transparent"></div>
+            <div id="dot14 left" class="rect left transparent"></div>
+            <div id="dot14 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-15" class="dot dot15" onclick="set_field('15')">
+            <div id="dot15 up" class="rect up transparent"></div>
+            <div id="dot15 left" class="rect left transparent"></div>
+            <div id="dot15 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-16" class="dot dot16" onclick="set_field('16')">
+            <div id="dot16 up" class="rect up transparent"></div>
+            <div id="dot16 left" class="rect left transparent"></div>
+            <div id="dot16 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-17" class="dot dot17" onclick="set_field('17')">
+            <div id="dot17 up" class="rect up transparent"></div>
+            <div id="dot17 left" class="rect left transparent"></div>
+            <div id="dot17 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-18" class="dot dot18" onclick="set_field('18')">
+            <div id="dot18 up" class="rect up transparent"></div>
+            <div id="dot18 left" class="rect left transparent"></div>
+            <div id="dot18 right" class="rect right transparent"></div>
+          </div>
+          <div id="player-dot-19" class="dot dot19" onclick="set_field('19')">
+            <div id="dot19 up" class="rect up transparent"></div>
+            <div id="dot19 left" class="rect left transparent"></div>
+            <div id="dot19 right" class="rect right transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

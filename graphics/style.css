@@ -1,0 +1,170 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.img-center {
+  display: block;
+  margin-left: 30px;
+}
+
+.main-row {
+  margin-top: 7em;
+  display: flex;
+}
+
+.score-container p {
+  font-size: large;
+  background-color: rgb(154, 168, 228);
+}
+
+.column {
+  flex: 50%;
+}
+
+.container {
+  margin-top: 5em;
+  position: relative;
+}
+
+.main-dot-center {
+  background-color: rgb(233, 230, 230);
+  border-radius: 50%;
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-family: "Ubuntu Mono";
+}
+
+.colorpicker-dot {
+  float: left;
+  height: 45px;
+  width: 45px;
+  background-color: rgb(233, 230, 230);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 3em;
+}
+
+.dot {
+  height: 75px;
+  width: 75px;
+  background-color: rgb(233, 230, 230);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.rect {
+  width: 10px;
+  height: 70px;
+  border-radius: 50px / 100px;
+  position: relative;
+  left: 32px;
+  top: 2px;
+}
+
+.rect-small {
+  width: 7px;
+  height: 40px;
+  border-radius: 50px / 100px;
+  position: relative;
+  left: 19px;
+  top: 2px;
+}
+
+.rect-big {
+  width: 15px;
+  height: 90px;
+  border-radius: 50px / 100px;
+  position: relative;
+  left: 43px;
+  top: 5px;
+}
+
+.up {
+  position: absolute;
+}
+
+.left {
+  position: absolute;
+  transform: rotate(52deg);
+}
+
+.right {
+  position: absolute;
+  transform: rotate(-52deg);
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.gold {
+  background: orange;
+}
+
+.turquise {
+  background: darkturquoise;
+}
+
+.gray {
+  background: gray;
+}
+
+.black {
+  background: black;
+}
+
+.purple {
+  background: purple;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.randomize-button {
+  background: #3D94F6;
+  background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Ubuntu Mono;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 10px;
+  box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  left: 7em;
+  top: 1.3em;
+}
+
+.randomize-button:hover {
+  border: solid #337FED 1px;
+  background: #fff;
+  color: #1E62D0;
+  text-decoration: none;
+  text-shadow: none;
+}
